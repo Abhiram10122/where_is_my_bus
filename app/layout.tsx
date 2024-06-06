@@ -1,9 +1,21 @@
 import type { Metadata } from "next";
-import { Inter } from "next/font/google";
+import { Inter, Jua, Manrope } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/front_end/Navbar";
 
 const inter = Inter({ subsets: ["latin"] });
+
+const jua = Jua({
+  weight: "400",
+  subsets: ["latin"],
+  variable: "--font-jua",
+});
+
+const manrope = Manrope({
+  weight: ["400", "500", "600", "700"],
+  subsets: ["latin"],
+  variable: "--font-manrope",
+});
 
 export const metadata: Metadata = {
   title: "Create Next App",
@@ -17,7 +29,9 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className={inter.className}>
+      <body
+        className={`${inter.className} ${jua.variable} ${manrope.variable}`}
+      >
         {children}
       </body>
     </html>
