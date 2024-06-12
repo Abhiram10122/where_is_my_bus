@@ -1,7 +1,6 @@
 import Hero from "@/components/front_end/Hero";
 import Home from "@/components/front_end/Home";
 import Navbar from "@/components/front_end/Navbar";
-import { Button } from "@/components/ui/button";
 import Link from "next/link";
 import React from "react";
 
