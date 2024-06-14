@@ -14,6 +14,7 @@ const config = {
       inter: ["var(--font-inter)"],
       jua: ["var(--font-jua)"],
       manrope: ["var(--font-manrope)"],
+      kumbh_sans: ["var(--font-kumbh-sans)"],
     },
     container: {
       center: true,
